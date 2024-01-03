@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</nodetitle>
+    <title>Meu primeiro programa</title>
     <style>
         body {
-            background-color: rgb(135, 108, 161);
+            background-color: blueviolet;
             color: #fff;
             font: normal 20pt arial;
         }
 
         h1 {
-            color: rgb(255, 106, 0);
-
+            color: rgb(244, 156, 4);
         }
     </style>
 </head>
 <body>
     <h1>Ola mundo!</h1>
-    <p>ja me livrei da maldição</p>
+    <p>Ja me livrei da maldição</p>
     <script>
-       var n1 = Number.parseInt(window.prompt('Digite um numero: '))
-       var n2 = Number.parseFloat(window.prompt('Digite outro numero: '))
-       var s = n1 + n2 
-       window.alert(`A soma dos valores entre ${n1} e ${n2} é igual a ${s}`)
+        let nome = window.prompt('Qual é seu nome?')// parece um input
+        window.alert('É um grande prazer em te conhecer, ' + nome )// "+" serve para concatenar
     </script>
 </body>
 </html>
