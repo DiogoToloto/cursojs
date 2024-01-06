@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-size: 20pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <script>
-        var nome = window.prompt('Qual é o seu nome?')
-        document.write('Ola, ${nome} seu nome tem ${nome.length} letras.')
+   <script>
+    var nome = window.prompt('Qual é o seu nome?')
+     document.write(`Olá, ${nome}, o seu nome tem ${nome.length} letras.`)
 
-    </script>
+     document.write(`Seu nome em maiusculas ${nome.toUpperCase()}`)
+
+     document.write(`Seu nome em menusculas ${nome.toLocaleLowerCase()}`)
+
+     /*
+        > var n1 = 1542.5
+        undefined
+        > n1
+        1542.5
+        > n1.tofixed(2)
+        Uncaught TypeError: n1.tofixed is not a function
+        > n1.toFixed(2)
+        '1542.50'
+        > n1.toFixed(2).replace('.',',')
+        '1542,50'
+*/
+
+        /* 
+        > n1.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+        'R$ 1.542,50' 
+        */
+   </script>
 </body>
 </html>
