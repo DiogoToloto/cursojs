@@ -4,7 +4,7 @@ function verificar() {
     let fano = document.getElementById('iano')
     let res = document.getElementById('res')
     if (fano.value.length == 0 || Number(fano.value) > ano) {
-        window.alert('Verifique os dados e tente novamente!')
+        window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
         let fsex = document.getElementsByName('sexo')
         let idade = ano - Number(fano.value)
@@ -15,7 +15,7 @@ function verificar() {
             genero = 'Homen'
             if (idade >= 0 && idade < 15) {
                 //criança
-                img.setAttribute('src' , 'menino.png')
+                img.setAttribute('src','menino.png')
             } else if (idade < 25) {
                 //adolecente
                 img.setAttribute('src','adolecente-menino.png')
@@ -30,16 +30,21 @@ function verificar() {
             genero = 'Mulher'
             if (idade >= 0 && idade < 15) {
                 //criança
+                img.setAttribute('src','menina.png')
             } else if (idade < 25) {
                 //adolecente
+                img.setAttribute('src','adolecente-menina.png')
             } else if (idade < 50) {
                 //adulto
+                img.setAttribute('src','mulher-adulto.png')
             } else {
                 //idoso
+                img.setAttribute('src','idosa.png')
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos de idade.`
         res.appendChild(img)
+
     }
 }
