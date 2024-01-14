@@ -2,7 +2,7 @@ let c = 1
 
 do {
     console.log(`Tudo bem! ${c}`)
-    c++
+    c += 2
 } while (c <= 5)
 
 /*
