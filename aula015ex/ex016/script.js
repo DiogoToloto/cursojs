@@ -17,7 +17,7 @@ function contar() {
             window.alert('Passo invalido! considerando passo 1')
             passo = 1
         }
-        if (i < f) {
+        if (inicio < fim) {
             for(let c = inicio; c <= fim; c += passo) {
                 res.innerHTML += `${c} `
             }
