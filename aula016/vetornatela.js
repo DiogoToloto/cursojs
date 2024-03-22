@@ -8,5 +8,5 @@ let valores = [1,2,4,6,0,3,11,32,25,65,43,8]
 }*/
 
 for (let pos in valores) {
-    console.log(valores[pos])
+    console.log(valores)
 }
